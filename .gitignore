@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Commitize
+
+node_modules/
+package-lock.json
+package.json
