@@ -1,6 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[![Build Status](https://travis-ci.org/jyr/cuenca-coding-challenge.svg?branch=master)](https://travis-ci.org/jyr/cuenca-coding-challenge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.org/jyr/cuenca-coding-challenge.svg?branch=master)](https://travis-ci.org/jyr/cuenca-coding-challenge)
 
 # Cuenca Docker Compose
 
