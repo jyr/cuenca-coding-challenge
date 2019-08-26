@@ -10,10 +10,10 @@ RUN apk update \
     && apk add vim
 
 # install pypi packages
-#COPY requirements.txt /requirements.txt
+COPY requirements_dev.txt /requirements_dev.txt
 
-#RUN pip install --upgrade pip \
-#    && pip install -r requirements.txt
+RUN pip install --upgrade pip \
+    && pip install -r requirements_dev.txt
 
 WORKDIR /code/
 

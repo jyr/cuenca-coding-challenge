@@ -1,7 +1,8 @@
 class Play:
 
-    def __init__(self, N):
+    def __init__(self, N = 8, verbose = False):
         self.N = N
+        self.activate_verbose = verbose
         self.queens_positions = [0 for c in range(N)]
         self.row_is_free = [True for r in range(N)]
         self.diagonal_asc = self.threatened_cells()
@@ -14,6 +15,7 @@ class Play:
 
         if column == self.N:
             self.show_solutions()
+            self.verbose()
         else:
             for row in range(self.N):
                 diagonal_down_index = column + row
@@ -39,11 +41,17 @@ class Play:
 
     def show_solutions(self):
         self.solutions += 1
-        print(self.solutions, end = ": ")
-        for row in range(self.N):
-            print (self.queens_positions[row] + 1 ,end = " " if row<self.N-1 else "\n")
 
+    def verbose(self):
+        if self.activate_verbose == True:
+            print(self.solutions, end = ": ")
+            for row in range(self.N):
+                print (self.queens_positions[row] + 1 ,end = " " if row<self.N-1 else "\n")
 
+def main():
+    puzzle = Play(N = 8)
+    puzzle.solve()
+    print("{} solutions".format(puzzle.solutions))
 
-puzzle = Play(N = 8)
-puzzle.solve()
+if __name__ == '__main__':
+    main()
