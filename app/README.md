@@ -23,3 +23,15 @@ You can borrow from an existing solution—except for Google's. If you borrow fr
 **Run the puzzle.**
 
 ```docker-compose exec app /bin/sh -c -l "python puzzle/nqueens.py"```
+
+
+## Puzzle controls
+
+**N**
+Is the queens number and represent the size board NxN
+
+**verbose**
+By default is False, with True is activated
+
+**record**
+Store the solutions on database
