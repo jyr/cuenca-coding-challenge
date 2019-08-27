@@ -90,8 +90,15 @@ class Play:
 @timeout_decorator.timeout(600)
 def main():
     print("Start")
-    puzzle = Play(N = 8, verbose = True, record=True)
+
+    N = int(input('Enter a queens number: [default=8]') or 8)
+    verbose = input('Do you want to activate the verbose? [yes | default=no] ') or 'no'
+    record = input('Do you want to save the solutions? [yes | default=no] ') or 'no'
+    answers = {'yes': True, 'no': False}
+
+    puzzle = Play(N = N, verbose = answers[verbose], record=answers[record])
     puzzle.solve()
+
     print("{} solutions".format(puzzle.solution_number))
 
 if __name__ == '__main__':
