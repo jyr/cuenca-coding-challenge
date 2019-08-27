@@ -18,13 +18,6 @@ Please commit everything in a public GitHub repo and use python3.
 
 You can borrow from an existing solution—except for Google's. If you borrow from someone else's code, please cite where you got the code and be ready to explain how the code works.
 
-## Basis Usage
-
-**Run the puzzle.**
-
-```docker-compose exec app /bin/sh -c -l "python puzzle/nqueens.py"```
-
-
 ## Puzzle controls
 
 **N**
@@ -34,4 +27,16 @@ Is the queens number and represent the size board NxN
 By default is False, with True is activated
 
 **record**
-Store the solutions on database
+By default is False, store the solutions on database
+
+## Basis Usage
+
+**Run the puzzle.**
+
+```compose$ docker-compose exec app /bin/sh -c -l "python puzzle/nqueens.py"```
+```compose$ docker-compose exec app /bin/sh -c -l "pytest"```
+
+## Resources used
+
+* [Eight queens puzzle algorithm](https://es.stackoverflow.com/questions/254207/no-puedo-entender-este-algoritmo-8-reinas-python?answertab=votes#tab-top)
+* [Problema de las ocho reinas](https://es.wikipedia.org/wiki/Problema_de_las_ocho_reinas)
