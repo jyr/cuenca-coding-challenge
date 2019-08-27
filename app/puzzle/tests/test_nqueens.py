@@ -7,7 +7,7 @@ class TestPlay:
             puzzle = Play(N)
             puzzle.solve()
 
-            assert puzzle.solutions in [
+            assert puzzle.solution_number in [
                 92,
                 352,
                 724,

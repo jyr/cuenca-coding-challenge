@@ -4,6 +4,7 @@ RUN apk update \
     && apk add --no-cache --virtual bash \
     && apk add gcc \
     && apk add musl-dev \
+    && apk add postgresql-dev \
     && apk add linux-headers \
     && apk add libffi-dev \
     && apk add curl \
